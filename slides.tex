@@ -235,7 +235,7 @@ multiplications.
 \item FunSearch/AlphaEvolve can be seen as:
 \begin{itemize}
 \item mechanizing effective interaction with the LLM,
-\item complex meta-generation framework.\footnote{See a nice NeurIPS tutorial:
+\item complex meta-generation framework.\footnote{See a nice NeurIPS tutorial:\\
 \textit{Beyond Decoding: Meta-Generation Algorithms for Large Language Models}}
 \end{itemize}
 \item An interesting trade-off:
@@ -243,11 +243,12 @@ multiplications.
 \item smaller, less clever, but faster LLM = more samples (FunSearch) \textit{vs}
 \item larger, more clever, but slower LLM = higher-quality samples (AlphaEvolve).
 \end{itemize}
-\item Is it possible to adapt the AlphaEvolve-style framework to formal proving?
+\item Can we adapt the AlphaEvolve to formal proving?
     \begin{itemize}
     \item A notion of \textit{partial proof progress} would be needed.
     \item But isn't it similar to what Seed Proved does at test time?
     \end{itemize}
+\item Is AlphaEvolve approach better than, say, GRPO fine-tuning?
 \item AlphaEvolve could be distilled into a better base LLM, which would result
 in \textit{meta-evolution}.
 \item Open-source implementation: OpenEvolve.
